@@ -1,14 +1,14 @@
 import type { SiteConfig } from "@/features/config/site-config.schema";
 
 export const blogConfig = {
-  title: "站点名称",
-  author: "作者",
+  title: "万里任禅游",
+  author: "JC",
   description:
-    "这是我的个人网站和博客。在这里，我主要分享与技术和生活相关的内容。欢迎阅读！",
+    "知识、工作、生活",
   social: [
-    { platform: "github", url: "https://github.com/example" },
-    { platform: "email", url: "mailto:example@email.com" },
-    { platform: "rss", url: "/rss.xml" },
+    { platform: "github", url: "https://github.com/OrthogonalAndParallel" },
+    { platform: "email", url: "jinchen19940116@email.com" },
+    { platform: "rss", url: "https://jc-blog.pages.dev/rss.xml" },
   ],
   icons: {
     faviconSvg: "/favicon.svg",
