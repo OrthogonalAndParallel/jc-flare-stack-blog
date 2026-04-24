@@ -1,7 +1,7 @@
 import type { SiteConfig } from "@/features/config/site-config.schema";
 
 export const blogConfig = {
-  title: "万里任禅游",
+  title: "禅游博客",
   author: "JC",
   description:
     "知识、工作、生活",
@@ -20,7 +20,7 @@ export const blogConfig = {
   },
   theme: {
     default: {
-      navBarName: "导航栏名称",
+      navBarName: "导航栏",
     },
     fuwari: {
       homeBg: "/images/home-bg.webp",
