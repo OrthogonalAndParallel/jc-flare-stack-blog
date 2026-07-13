@@ -24,15 +24,19 @@ export const McpPostsListInputSchema = z.object({
 });
 
 export const McpPostSummarySchema = z.object({
-  createdAt: z.iso.datetime().describe("Post creation time."),
+  createdAt: z.string().datetime().describe("Post creation time."),
   id: z.number().describe("Numeric post ID."),
-  publishedAt: z.iso.datetime().nullable().describe("Publish time, if any."),
+  publishedAt: z
+    .string()
+    .datetime()
+    .nullable()
+    .describe("Publish time, if any."),
   readTimeInMinutes: z.number().describe("Estimated reading time in minutes."),
   slug: z.string().describe("Post slug."),
   status: z.enum(POST_STATUSES).describe("Post status."),
   summary: z.string().nullable().describe("Post summary."),
   title: z.string().describe("Post title."),
-  updatedAt: z.iso.datetime().describe("Last update time."),
+  updatedAt: z.string().datetime().describe("Last update time."),
 });
 
 export const McpPostListItemSchema = McpPostSummarySchema.extend({

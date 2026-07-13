@@ -3,8 +3,7 @@ import type { SiteConfig } from "@/features/config/site-config.schema";
 export const blogConfig = {
   title: "禅游博客",
   author: "JC",
-  description:
-    "知识、工作、生活",
+  description: "知识、工作、生活",
   social: [
     { platform: "github", url: "https://github.com/OrthogonalAndParallel" },
     { platform: "email", url: "jinchen19940116@email.com" },
